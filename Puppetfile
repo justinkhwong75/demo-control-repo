@@ -66,6 +66,7 @@ mod 'dsc-auditpolicydsc', '1.4.0-0-4'
 mod 'dsc-securitypolicydsc', '2.10.0-0-3'
 
 # Forge Community Modules
+mod 'danieldreier-autosign', '0.3.0'
 mod 'puppet-yum', '4.3.0'  # Required for the CD4PE workshop
 mod 'WhatsARanjit-diskspace', '0.2.0'
 mod 'WhatsARanjit-node_manager', '0.7.3'
