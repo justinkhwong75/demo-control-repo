@@ -3,7 +3,7 @@ class profile::puppet::master::autosign {
     setting => 'autosign',
     path    => $settings::config,
     section => 'master',
-    value   => '/usr/local/bin/autosign-validator',
+    value   => '/opt/puppetlabs/puppet/bin/autosign-validator',
     notify  => Service['pe-puppetserver'],
   }
   
