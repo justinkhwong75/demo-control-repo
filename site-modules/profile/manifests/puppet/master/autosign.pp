@@ -6,4 +6,17 @@ class profile::puppet::master::autosign {
     value   => '/usr/local/bin/autosign-validator',
     notify  => Service['pe-puppetserver'],
   }
+  
+  class { ::autosign:
+    ensure => 'latest',
+    config => {
+      'general' => {
+        'loglevel' => 'DEBUG',
+      },
+      'jwt_token' => {
+        'secret'   => 'hunter2'
+        'validity' => '7200',
+      }
+    },
+  }
 }
