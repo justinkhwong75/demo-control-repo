@@ -11,7 +11,7 @@ class profile::puppet::master::autosign {
     ensure => 'latest',
     config => {
       'general' => {
-        'loglevel' => 'DEBUG',
+        'loglevel' => 'INFO',
       },
       'jwt_token' => {
         'secret'   => 'hunter2',
