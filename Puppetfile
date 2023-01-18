@@ -124,3 +124,7 @@ mod 'rgbank',
 mod 'netstat',
     git: 'https://github.com/ipcrm/ipcrm-netstat.git',
     ref: '64bcee0'
+
+mod 'review',
+  git:    'https://github.com/justinkhwong75/review.git',
+  branch: 'main'
