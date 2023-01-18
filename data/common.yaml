@@ -187,6 +187,19 @@ pe_r10k::forge_settings:
 puppet_enterprise::master::code_manager::forge_settings:
   authorization_token: 'Bearer 1a5659e21d83616a1ab75fb334846dae243d39c709833341eaa5548753fc8342'
   
+  
+## CEM Linux
+cem_linux::benchmark: 'cis'
+cem_linux::config:
+  profile: 'server' 
+  level: '1'
+  only:
+    - 'c5_5_1_1'
+    
+  control_configs:
+    c5_5_1_1:
+      pass_max_days: 180
+      
 # CEM Windows Ignore Rules (To allow RDP/WinRM & not conflict with baseline profile)
 #cem_windows::config:
 #  profile: 'member_server'
