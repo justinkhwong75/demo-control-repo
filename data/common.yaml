@@ -180,24 +180,31 @@ cd4pe::root_config::ssl_authority_certificate: |
   wXrjkw==
   -----END CERTIFICATE-----
 
+# Puppet CEM Forge
+pe_r10k::forge_settings:
+  authorization_token: 'Bearer 1a5659e21d83616a1ab75fb334846dae243d39c709833341eaa5548753fc8342'
+  baseurl: 'https://forgeapi.puppet.com'
+puppet_enterprise::master::code_manager::forge_settings:
+  authorization_token: 'Bearer 1a5659e21d83616a1ab75fb334846dae243d39c709833341eaa5548753fc8342'
+  
 # CEM Windows Ignore Rules (To allow RDP/WinRM & not conflict with baseline profile)
-cem_windows::config:
-  profile: 'member_server'
-  level: '1'
-  ignore: 
-    - 'c2_2_3'
-    - 'c2_2_21'
-    - 'c2_2_26'
-    - 'c9_1_2'
-    - 'c9_2_2'
-    - 'c9_3_2'
-    - 'c18_9_97_1_1'
-    - 'c18_9_97_1_2'
-    - 'c18_9_97_1_3'
-    - 'c18_9_97_2_1'
-    - 'c18_9_97_2_3'
-    -  'c18_9_97_2_4'
-    - 'c18_9_102_2'
-    - 'c18_9_103_2'
-    - 'c18_9_108_2_1'
+#cem_windows::config:
+#  profile: 'member_server'
+#  level: '1'
+#  ignore: 
+#    - 'c2_2_3'
+#    - 'c2_2_21'
+#    - 'c2_2_26'
+#    - 'c9_1_2'
+#    - 'c9_2_2'
+#    - 'c9_3_2'
+#    - 'c18_9_97_1_1'
+#    - 'c18_9_97_1_2'
+#    - 'c18_9_97_1_3'
+#    - 'c18_9_97_2_1'
+#    - 'c18_9_97_2_3'
+#    -  'c18_9_97_2_4'
+#    - 'c18_9_102_2'
+#    - 'c18_9_103_2'
+#    - 'c18_9_108_2_1'
   
