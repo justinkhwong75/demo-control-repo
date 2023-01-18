@@ -16,7 +16,7 @@ mod 'puppetlabs-azure', '1.3.1'
 mod 'puppetlabs-bolt_shim', '0.3.2'
 mod 'puppetlabs-cd4pe', '2.0.1'
 mod 'puppetlabs-cd4pe_jobs', '1.5.0'
-#mod 'puppetlabs-cem_linux', :latest
+mod 'puppetlabs-cem_linux', '1.4.3'
 #mod 'puppetlabs-cem_windows', :latest
 mod 'puppetlabs-chocolatey', '6.2.0'
 mod 'puppetlabs-cisco_ios', '1.3.0'
