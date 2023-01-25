@@ -9,11 +9,11 @@ hierarchy:
     data_hash: servicenow_cmdb_integration::getvar
     options:
       var: trusted.external.servicenow.hiera_data
-  - name: "Review data"
-    datadir: "modules/review/data/"
-    paths:
-      - 'nodes/%{::fqdn}.yaml'
-      - 'common.yaml'
+ # - name: "Review data"
+ #   datadir: "modules/review/data/"
+ #   paths:
+ #     - 'nodes/%{::fqdn}.yaml'
+ #     - 'common.yaml'
   - name: 'Environment data'
     lookup_key: eyaml_lookup_key
     paths:
